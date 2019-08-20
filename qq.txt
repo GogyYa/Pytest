@@ -1,0 +1,8 @@
+Value ID (\S+)
+Value IP (\d+.\d+.\d+.\d+)
+Value DeviceName (\S+)
+Value User (host/\S+|ERC\S+)
+Value Date (\d+.\d+.\d+)
+
+Start
+  ^  ${ID}.+#${DeviceName}#${IP}', '${Date}.+${User} -> Record

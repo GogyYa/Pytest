@@ -1,0 +1,8 @@
+Value MAC (\w{6}.\w{6})
+Value ID ([^Tt ]\d{0,2})
+Value IP (\d+.\d+.\d+.\d+)
+Value Date (\d+.\d+.\d+)
+Value VID (\d{3,4})
+
+Start
+  ^  ${MAC}     ${ID}.+#${IP}', '${Date}[^0-9]+${VID} -> Record
